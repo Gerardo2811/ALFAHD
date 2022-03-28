@@ -67,6 +67,21 @@ footer{
     color: #fff;
 }
 
+#categorias{
+    background-color: #F9F8B1;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-catalogos{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 
 
 }
