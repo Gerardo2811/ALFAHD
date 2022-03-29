@@ -80,7 +80,33 @@ footer{
 .logos-catalogos{
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
 }
+
+.modal-header{
+    background-color: #212529;
+    color: #fff;
+}
+
+.modal-body{
+    background-color: #F9F8B1;
+}
+
+.modal-footer{
+    background-color: #212529;
+}
+
+.card-body{
+    background-color: #DBD968;
+    
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
