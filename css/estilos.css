@@ -107,7 +107,16 @@ footer{
     margin-right: auto;
 }
 
+#body-card{
+    background-color: #F9F8B1;
+}
 
+#card-empresas{
+    border-radius: 20px;
+}
 
+.form-select{
+    background-color:#F9F8B1;
+}
 
 }
