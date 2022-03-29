@@ -1,7 +1,14 @@
 
+
+
+
 @media (min-width: 280px){
+
 body{
     background-color: #DBD968;
+    background-image: url('../img/fondo.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -105,14 +112,20 @@ footer{
 .card{
     margin-left: auto;
     margin-right: auto;
+    border-color:#3F3D3D;
+    padding: 15px;
+    border-radius: 25px;
 }
 
+#card-productos{
+    background-color: #DBD968;
+}
 #body-card{
     background-color: #F9F8B1;
 }
 
 #card-empresas{
-    border-radius: 20px;
+    background-color: #F9F8B1;
 }
 
 .form-select{
