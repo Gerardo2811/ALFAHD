@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
 }
 
 #cheeta{
@@ -130,6 +131,19 @@ footer{
 
 .form-select{
     background-color:#F9F8B1;
+}
+
+#pequeño{
+    width: 50px;
+    height: 50px;
+}
+
+#div-tabla{
+    padding: 10px;
+   
+}
+#tabla{
+    background-color: #fff;
 }
 
 }
