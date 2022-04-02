@@ -47,7 +47,12 @@ body{
 }
 
 .container-fluid{
+    
     justify-content:flex-start !important;
+}
+
+#logos-img{
+    margin-right:600px;
 }
 
 footer{
