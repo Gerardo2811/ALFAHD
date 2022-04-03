@@ -1,0 +1,36 @@
+<form action="" id="form" name="formulario">
+          <p class="p-registro">Ingrese sus nombres</p>
+          <input id="nombre" class="input" type="text">
+  `        <p class="p-registro">Ingrese sus apellidos</p>
+          <input id="apellido" class="input" type="text">
+          <p class="p-registro">Ingrese su email</p>
+          <input id="email" class="input" type="email" name="email">
+          <p class="p-registro">Ingrese contrasena</p>
+          <input id="contrasena" class="input" type="password" name="password">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <input  type="submit">
+        </div>
+        </form>
+
+
+        <div class="form">
+              <h1>Registro</h1>
+              <div class="grupo mb-3">
+                  <input type="text" name="" id="name" ><span class="barra"></span>
+                  <label for="">Nombre</label>
+              </div>
+              <div class="grupo">
+                  <input type="email" name="" id="email" ><span class="barra"></span>
+                  <label for="">Email</label>
+              </div>
+              <div class="grupo">
+                  <input type="password" name="" id="password" ><span class="barra"></span>
+                  <label for="">Password</label>
+              </div>
+              
+              <button type="submit">Suscribirte</button>
+              <p class="warnings" id="warnings"></p>
+          </div>
+      </form>
