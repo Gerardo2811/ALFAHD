@@ -3,12 +3,14 @@ body{
     background-image: url('../img/fondo2.png') ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
     color: #fff;
 }
+
 
 #cheeta{
     width: 120px;
