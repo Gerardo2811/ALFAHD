@@ -11,11 +11,24 @@ body{
     text-align: center;
     color: #fff;
 }
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#enlace{
+    color: #fff;
+    text-decoration: none;
+}
+
+
 #cheeta{
     width: 120px;
     height: 90px;
     margin-right: 0%;
 }
+
 
 #Alfahd{
     width: 120px;

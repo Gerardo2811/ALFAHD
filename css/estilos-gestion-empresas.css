@@ -1,9 +1,7 @@
+
+
 body{
-    
     background-image: url(/img/fondo-gestion-empresas.png);
-    
-    
-    
     background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +12,11 @@ body{
     min-height: 100vh;
     text-align: center;
     color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
 }
 
 #cheeta{

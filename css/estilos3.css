@@ -11,6 +11,10 @@ body{
     color: #fff;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+}
 
 #cheeta{
     width: 120px;
