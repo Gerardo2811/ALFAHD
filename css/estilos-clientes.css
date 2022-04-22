@@ -1,0 +1,158 @@
+@media (min-width: 280px){
+
+body{
+    background-color: #DBD968;
+    background-image: url('../img/fondo1.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#cheeta{
+    width: 120px;
+    height: 90px;
+    margin-right: 0%;
+}
+
+#Alfahd{
+    width: 120px;
+    height: 90px;
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+
+#logo{
+    margin-right: 5px;
+    width: 40px;
+    height: 30px;
+}
+
+
+#logo-buton{
+    margin: 0px auto 50px;
+   padding:10px;
+   background-color: #fff;
+   border-radius: 10px;
+}
+
+#terminos{
+    background-color: #F9F8B1;
+    border-radius: 10px;
+    margin: 10PX;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.container-fluid{
+    justify-content:flex-start !important;
+}
+
+footer{
+    padding: 10px;
+    margin-top: auto;
+    background-color: #212529;
+    text-align: center;
+}
+
+.navbar{
+    margin-bottom: 50px;
+}
+
+#logo-buton-footer{
+    
+    margin: 0px auto;
+    padding:10px;
+    background-color: #3F3D3D;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#categorias{
+    background-color: #F9F8B1;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-catalogos{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.modal-header{
+    background-color: #212529;
+    color: #fff;
+}
+
+.modal-body{
+    background-color: #F9F8B1;
+}
+
+.modal-footer{
+    background-color: #212529;
+}
+
+.card-body{
+    background-color: #DBD968;
+    
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    border-color:#3F3D3D;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#card-productos{
+    background-color: #DBD968;
+}
+#body-card{
+    background-color: #F9F8B1;
+}
+
+#card-empresas{
+    background-color: #F9F8B1;
+}
+
+.form-select{
+    background-color:#F9F8B1;
+}
+
+#pequeño{
+    width: 50px;
+    height: 50px;
+}
+
+#div-tabla{
+    padding: 10px;
+   
+}
+#tabla{
+    background-color: #fff;
+}
+
+.p-registro{
+    font-weight: 600;
+}
+
+.input{
+    margin-bottom: 10px;
+    border-style: none;
+    border-bottom-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+}
