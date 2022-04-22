@@ -17,3 +17,5 @@ function error(){
 }
 
 navigator.geolocation.getCurrentPosition(localizacion,error);
+
+
