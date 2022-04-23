@@ -161,6 +161,10 @@ class Motoristas{
         $archivo = fopen("../data/motoristas.json", "w"); //w para sustituir el contenido
         fwrite($archivo, json_encode($motoristas));
 }
+    public static function obtenerMotoristas(){
+        $contenidoArchivo = file_get_contents("../data/motoristas.json");
+        echo $contenidoArchivo;
+}
 }
 
 ?>

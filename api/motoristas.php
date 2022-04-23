@@ -11,7 +11,7 @@
         break;
         
         case 'GET':
-            //..   
+                Motoristas::obtenerMotoristas();
          break;
         case 'PUT':
            //...
