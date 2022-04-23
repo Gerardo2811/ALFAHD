@@ -1,5 +1,5 @@
 <?php
-    header("Content-type: application/json");
+    header("content-Type: application/json ");
     include_once("../class/class-usuarios.php");
     switch($_SERVER['REQUEST_METHOD']){
         case 'POST':

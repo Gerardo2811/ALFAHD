@@ -1,7 +1,6 @@
 body{
-    background-image: url(/img/fondo-solicitudes-empresas.png);
-    background-repeat: no-repeat;
     background-color: #000000;
+    background-image: url('../img/fondo-solicitudes-empresas.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10,6 +9,7 @@ body{
     min-height: 100vh;
     text-align: center;
     color: #fff;
+    text-align: left;
 }
 
 a{

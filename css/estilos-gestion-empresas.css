@@ -1,11 +1,10 @@
 
 
 body{
-    background-image: url(/img/fondo-gestion-empresas.png);
     background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
     
+    background-repeat: no-repeat;
+    background-size: cover;  
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
