@@ -53,17 +53,7 @@ class Usuarios{
 
         return $this;
     }
-    public function guardarUsuarios(){
-        $contenidoArchivo= file_get_contents("../data/usuarios.json");
-        $usuarios = json_decode($contenidoArchivo, true);
-        $usuarios[]=array(
-            "nombre"=>$this->nombre,
-            "email"=>$this->email,
-            "password"=>$this->password,
-        );
-        $archivo = fopen("../data/usuarios.json", "w"); //w para sustituir el contenido
-        fwrite($archivo, json_encode($usuarios));
-}
+    
 
     /**
      * Get the value of nombre
@@ -84,5 +74,17 @@ class Usuarios{
 
         return $this;
     }
+
+    public function guardarUsuarios(){
+        $contenidoArchivo= file_get_contents("../data/usuarios.json");
+        $usuarios = json_decode($contenidoArchivo, true);
+        $usuarios[]=array(
+            "nombre"=>$this->nombre,
+            "email"=>$this->email,
+            "password"=>$this->password,
+        );
+        $archivo = fopen("../data/usuarios.json", "w"); //w para sustituir el contenido
+        fwrite($archivo, json_encode($usuarios));
+}
 }
 ?>

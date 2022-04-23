@@ -1,3 +1,5 @@
+var usuarios=[];
+
 //Variables de el modal registro
 const nombre = document.getElementById("name")
 const email = document.getElementById("email")
@@ -62,3 +64,52 @@ formGF.addEventListener("submit", e=>{
         parrafo_GF.innerHTML = "Enviado"
     }
 })
+
+
+
+const url = '../ALFHAD/api/usuarios.php';
+function guardar(){
+
+    usuario ={
+        nombre:document.getElementById('nombre').value,
+        email:document.getElementById('email').value,
+        password:document.getElementById('password').value,
+    };
+    axios({
+        method:'POST',
+        url:url,
+        responseType:'json',
+        data: usuario
+        }) .then(res=>{
+            console.log(res.data);
+            this.usuario=res.data;
+        }) .catch(error=>{
+            console.error(error);
+        });
+        document.getElementById('nombre').value=null,
+        document.getElementById('email').value=null,
+        document.getElementById('password').value=null
+}
+
+
+ function guardar2(){
+
+    usuario ={
+        email:document.getElementById('email_GF').value,
+        password:document.getElementById('password_GF').value,
+    };
+    axios({
+        method:'POST',
+        url:'../ALFHAD/api/usuariosGF.php',
+        responseType:'json',
+        data: usuario
+        }) .then(res=>{
+            console.log(res.data);
+            this.usuario=res.data;
+        }) .catch(error=>{
+            console.error(error);
+        });
+       
+        document.getElementById('email_GF').value=null,
+        document.getElementById('password_GF').value=null
+}
