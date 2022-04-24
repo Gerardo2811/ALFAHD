@@ -1,6 +1,6 @@
 <?php
 
-class Motoristas{
+class MotoristasOficiales{
     private $nombreCompleto;
     private $correoElectronico;
     private $numeroCelular;
@@ -146,8 +146,8 @@ class Motoristas{
     }
 
 
-    public function guardarMotorista(){
-        $contenidoArchivo= file_get_contents("../data/motoristas.json");
+    public function guardarMotoristaOficial($indice){
+        $contenidoArchivo= file_get_contents("../data/motoristas-oficiales.json");
         $motoristas = json_decode($contenidoArchivo, true);
         $motoristas[]=array(
             "nombreCompleto"=>$this->nombreCompleto,
@@ -158,26 +158,28 @@ class Motoristas{
             "contrasena"=>$this->contrasena
             
         );
-        $archivo = fopen("../data/motoristas.json", "w"); //w para sustituir el contenido
+        $archivo = fopen("../data/motoristas-oficiales.json", "w"); //w para sustituir el contenido
         fwrite($archivo, json_encode($motoristas));
 }
-    public static function obtenerMotoristas(){
-        $contenidoArchivo = file_get_contents("../data/motoristas.json");
+
+
+    public static function obtenerMotoristasOficiales(){
+        $contenidoArchivo = file_get_contents("../data/motoristas-oficiales.json");
         echo $contenidoArchivo;
 }
 
-public static function obtenerMotorista($indice){
-    $contenidoArchivo =  file_get_contents("../data/motoristas.json");
+public static function obtenerMotoristaOficial($indice){
+    $contenidoArchivo =  file_get_contents("../data/motoristas-oficiales.json");
     $usuario= json_decode($contenidoArchivo,true);
     echo json_encode($motorista[$indice]);
 }   
 
-public static function eliminarMotorista($indice){
-    $contenidoArchivo =  file_get_contents("../data/motoristas.json");
+public static function eliminarMotoristaOficial($indice){
+    $contenidoArchivo =  file_get_contents("../data/motoristas-oficiales.json");
     $motoristas= json_decode($contenidoArchivo,true);
     array_splice($motoristas,$indice,1);
-    $archivo= fopen("../data/motoristas.json","w");
-    fwrite($archivo,json_encode($motorista));
+    $archivo= fopen("../data/motoristas-oficiales.json","w");
+    fwrite($archivo,json_encode($motoristas));
     fclose($archivo);
 
 }

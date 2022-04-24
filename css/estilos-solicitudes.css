@@ -112,3 +112,11 @@ background-color: #DBD968;
 /* #ventanas-solicitudes{
     padding: 0px
 } */
+
+th{
+    color: white;
+}
+
+td{
+    color: white;
+}

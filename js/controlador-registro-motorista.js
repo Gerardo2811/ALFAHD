@@ -8,7 +8,7 @@ const form = document.getElementById('form')
 const parrafo = document.getElementById('warnings')
 
 
-form.addEventListener("submit", e=>{
+form.addEventListener("button", e=>{
     e.preventDefault()
     let warnings = ""
     let entrar = false
@@ -41,9 +41,40 @@ form.addEventListener("submit", e=>{
 
         if(entrar){
             parrafo.innerHTML = warnings
-            console.log('no da')
         }else{
             parrafo.innerHTML = "Enviado"
-            console.log('si da')
         } 
 })
+
+
+function guardar(){
+
+    motorista ={
+        nombreCompleto:document.getElementById('nombre').value,
+        correoElectronico:document.getElementById('email').value,
+        numeroCelular:document.getElementById('numero').value,
+        fechaNacimiento:document.getElementById('fecha').value,
+        departamentoLaboral:document.getElementById('departamentos').value,
+        contrasena:document.getElementById('password').value
+    };
+    axios({
+        method:'POST',
+        url:'../ALFHAD/api/motoristas.php',
+        responseType:'json',
+        data: motorista
+        }) .then(res=>{
+            console.log(res.data);
+            this.motorista=res.data;
+        }) .catch(error=>{
+            console.error(error);
+        });
+       
+        document.getElementById('nombre').value=null,
+        document.getElementById('email').value=null,
+        document.getElementById('numero').value=null,
+        document.getElementById('fecha').value=null,
+        document.getElementById('departamentos').value=null,
+        document.getElementById('password').value=null
+
+
+}

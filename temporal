@@ -1,15 +1,18 @@
-<a href="#" class="motoristas list-group-item list-group-item-action" id="solicitud-uno">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Juan perez</h5>
-      <small>Hace 3 dias</small>
+<div class="col rounded-3" id="ventanas-solicitudes">
+                           
+                            
+    <a href="#" class="motoristas list-group-item list-group-item-action" id="solicitud-uno">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Juan perez</h5>
+            <small>Hace 3 dias</small>
     </div>
     <p class="mb-1">98278912</p>
     <p class="mb-1">Francisco morazan</p>
     <small>12/12/12</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action" id="solicitud-dos">
+</a>
+<a href="#" class="list-group-item list-group-item-action" id="solicitud-dos">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Gustavo Lopez</h5>
+        <h5 class="mb-1">Gustavo Lopez</h5>
       <small>Hace 2 dias</small>
     </div>
     <p class="mb-1">Comprometido</p>
@@ -17,11 +20,30 @@
     <small>Solidario</small>
   </a>
   <a href="#" class="list-group-item list-group-item-action" id="solicitud-uno">
-    <div class="d-flex w-100 justify-content-between">
+      <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Josue Lopez</h5>
       <small>Hace 6 dias</small>
     </div>
     <p class="mb-1">Casado</p>
     <p class="mb-1">1 anos de experiencia</p>
     <small>Honesto</small>
-  </a>
+</a>
+</div>
+
+<div class="col rounded-3" id="ventanas-solicitudes">
+    <a href="#" class="list-group-item list-group-item-action " id="solicitud-uno">
+        <button id="btn-verde" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modificar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" id="solicitud-dos">
+        <button id="btn-verde" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modificar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" id="solicitud-uno">
+        <button id="btn-verde" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modificar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </a>
+  </div>
+  <div class="col-6">
+
+  </div>

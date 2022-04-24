@@ -11,14 +11,21 @@
         break;
         
         case 'GET':
+            if(isset($_GET['id'])){
+                Motoristas::obteneMotorista($_GET['id']);
+            }else{
                 Motoristas::obtenerMotoristas();
+            }
          break;
         case 'PUT':
            //...
         break;
 
         case 'DELETE':
-            //..
+            Motoristas::eliminarMotorista($_GET["id"]);
+            $resultado["mensaje"]= "Eliminar un usuario con el id: ". $_GET['id'];
+            echo json_encode($resultado);
+            break;
     }
 
 ?>
