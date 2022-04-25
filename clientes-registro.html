@@ -20,12 +20,12 @@
         <div class="container-fluid">
           <img src="img/cheeta.png" alt="" id="cheeta">
           <img src="img/ALFAHD.png" alt="" id="Alfahd">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        
         </div>
       </nav>
-
+      <h3>Si ya tienes una cuenta ingresa aqui</h3>
+      <button data-bs-toggle="modal" data-bs-target="#modallogin" id="logo-buton"><img src="img/Registrarse.png" alt="" id="logo">Iniciar sesion</button>
+      <h3>Registrate con tus cuentas o crea una en nuestro sitio</h3>
       <button data-bs-toggle="modal" data-bs-target="#modalGoogle-Face" id="logo-buton"><img src="img/logo-google.png" alt="" id="logo">Continuar con Google</button>
       <button data-bs-toggle="modal" data-bs-target="#modalGoogle-Face" id="logo-buton"><img src="img/logo-facebook.png" alt="" id="logo">Continuar con Facebook</button>
       <button data-bs-toggle="modal" data-bs-target="#modal-Registro" id="logo-buton"><img src="img/Registrarse.png" alt="" id="logo">Registrarse</button>
@@ -99,6 +99,42 @@
               <p class="warnings" id="warnings_GF"></p>
           </div>
       </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="modallogin" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST" id="formR">
+          <div class="form">
+            <h1>Login</h1>
+              </div>
+              <div class="grupo">
+                <label for="">Email</label>
+                  <input type="email" name="" id="email" ><span class="barra"></span>
+                 
+              </div>
+
+              <br>
+              <div class="grupo">
+                <label for="">Password</label>
+                  <input type="password" name="" id="password" ><span class="barra"></span>
+              </div>
+              <br>
+              <button type="button" class="btn btn-primary" onclick="guardar()">Ingresar</button>
+            </div>
+            </form>
     </div>
   </div>
 </div>

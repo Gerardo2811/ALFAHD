@@ -1,84 +1,32 @@
 <?php
 class MotoristasOficiales{
     private $nombreCompleto;
-    private $correoElectronico;
+    private $email;
     private $numeroCelular;
     private $fechaNacimiento;
     private $departamentoLaboral;
-    private $contrasena;
+    private $password;
 
     public function __construct(
         $nombreCompleto,
-        $correoElectronico,
+        $email,
         $numeroCelular,
         $fechaNacimiento,
         $departamentoLaboral,
-        $contrasena
+        $password
 
     ){
         $this->nombreCompleto=$nombreCompleto;
-        $this->correoElectronico=$correoElectronico;
+        $this->email=$email;
         $this->numeroCelular=$numeroCelular;
         $this->fechaNacimiento=$fechaNacimiento;
         $this->departamentoLaboral=$departamentoLaboral;
-        $this->contrasena=$contrasena;
+        $this->password=$password;
     }
 
 
 
-    public function guardarMotoristaOficial(){
-        $contenidoArchivo= file_get_contents("../data/empresas.json");
-        $empresas = json_decode($contenidoArchivo, true);
-        $empresas[]=array(
-            "nombreCompleto"=>$this->nombreEmpresa,
-            "correoElectronico"=>$this->correoElectronico,
-            "fechaNacimiento"=>$this->fechaNacimiento,
-            "departamentoLaboral"=>$this->departamentoLaboral,
-            "numeroCelular"=>$this->numeroCelular,
-            "contrasena"=>$this->contrasena,
-            
-        );
-
-        $archivo = fopen("../data/motoristasOficiales.json", "w"); //w para sustituir el contenido
-        fwrite($archivo, json_encode($empresas));
-}
-    public static function obtenerMotoristas(){
-        $contenidoArchivo = file_get_contents("../data/motoristasOficiales.json");
-        echo $contenidoArchivo;
-}
-
-public static function obtenerMotorista($indice){
-    $contenidoArchivo =  file_get_contents("../data/motoristasOficiales.json");
-    $motoristas= json_decode($contenidoArchivo,true);
-    echo json_encode($motoristas[$indice]);
-}   
-
-public static function eliminarMotorista($indice){
-    $contenidoArchivo =  file_get_contents("../data/motoristasOficiales.json");
-    $motoristas= json_decode($contenidoArchivo,true);
-    array_splice($motoristas,$indice,1);
-    $archivo= fopen("../data/motoristasOficiales.json","w");
-    fwrite($archivo,json_encode($motoristas));
-    fclose($archivo);
-
-}
-
-public function actualizarMotoristaOficial($indice){
-
-    $contenidoArchivo =  file_get_contents("../data/motoristasOficiales.json");
-    $motoristas= json_decode($contenidoArchivo,true);
-    $motorista = array (
-        'nombreEmpresa'=>$this->nombreCompleto,
-            'correoElectronico'=>$this->correoElectronico,
-            'fechaNacimiento'=>$this->fechaNacimiento,
-            'departamentoLaboral'=>$this->departamentoLaboral,
-    );
-
-    $motoristas=[$indice] = $motorista;
-        $archivo= fopen("../data/motoristasOficiales.json","w");
-       fwrite($archivo,json_encode($motoristas));
-       fclose($archivo);
-}
+    
 
 
 
@@ -104,21 +52,21 @@ public function actualizarMotoristaOficial($indice){
     }
 
     /**
-     * Get the value of correoElectronico
+     * Get the value of email
      */ 
-    public function getCorreoElectronico()
+    public function getEmail()
     {
-        return $this->correoElectronico;
+        return $this->email;
     }
 
     /**
-     * Set the value of correoElectronico
+     * Set the value of email
      *
      * @return  self
      */ 
-    public function setCorreoElectronico($correoElectronico)
+    public function setEmail($email)
     {
-        $this->correoElectronico = $correoElectronico;
+        $this->email = $email;
 
         return $this;
     }
@@ -184,24 +132,80 @@ public function actualizarMotoristaOficial($indice){
     }
 
     /**
-     * Get the value of contrasena
+     * Get the value of password
      */ 
-    public function getContrasena()
+    public function getPassword()
     {
-        return $this->contrasena;
+        return $this->password;
     }
 
     /**
-     * Set the value of contrasena
+     * Set the value of password
      *
      * @return  self
      */ 
-    public function setContrasena($contrasena)
+    public function setPassword($password)
     {
-        $this->contrasena = $contrasena;
+        $this->password = $password;
 
         return $this;
     }
+
+
+
+    public function guardarMotoristaOficial(){
+        $contenidoArchivo= file_get_contents("../data/empresas.json");
+        $empresas = json_decode($contenidoArchivo, true);
+        $empresas[]=array(
+            "nombreCompleto"=>$this->nombreEmpresa,
+            "email"=>$this->email,
+            "fechaNacimiento"=>$this->fechaNacimiento,
+            "departamentoLaboral"=>$this->departamentoLaboral,
+            "numeroCelular"=>$this->numeroCelular,
+            "password"=>$this->password,
+            
+        );
+
+        $archivo = fopen("../data/motoristasOficiales.json", "w"); //w para sustituir el contenido
+        fwrite($archivo, json_encode($empresas));
+}
+    public static function obtenerMotoristas(){
+        $contenidoArchivo = file_get_contents("../data/motoristasOficiales.json");
+        echo $contenidoArchivo;
+}
+
+public static function obtenerMotorista($indice){
+    $contenidoArchivo =  file_get_contents("../data/motoristasOficiales.json");
+    $motoristas= json_decode($contenidoArchivo,true);
+    echo json_encode($motoristas[$indice]);
+}   
+
+public static function eliminarMotorista($indice){
+    $contenidoArchivo =  file_get_contents("../data/motoristasOficiales.json");
+    $motoristas= json_decode($contenidoArchivo,true);
+    array_splice($motoristas,$indice,1);
+    $archivo= fopen("../data/motoristasOficiales.json","w");
+    fwrite($archivo,json_encode($motoristas));
+    fclose($archivo);
+
+}
+
+public function actualizarMotoristaOficial($indice){
+    $contenidoArchivo =  file_get_contents("../data/motoristasOficiales.json");
+    $motoristas= json_decode($contenidoArchivo,true);
+    $motorista = array (
+            'nombreCompleto'=>$this->nombreCompleto,
+            'email'=>$this->email,
+            'numeroCelular'=>$this->numeroCelular,
+            'fechaNacimiento'=>$this->fechaNacimiento,
+            'departamentoLaboral'=>$this->departamentoLaboral,
+            'password'=>$this->password,
+    );
+    $motoristas[$indice] = $motorista;
+        $archivo= fopen("../data/motoristasOficiales.json","w");
+       fwrite($archivo,json_encode($motoristas));
+       fclose($archivo);
+}
 }
 
 ?>

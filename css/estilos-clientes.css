@@ -12,13 +12,13 @@ body{
 }
 
 #cheeta{
-    width: 120px;
+    width: 100px;
     height: 90px;
     margin-right: 0%;
 }
 
 #Alfahd{
-    width: 120px;
+    width: 100px;
     height: 90px;
     margin-left: 0;
     margin-right: 70px;
@@ -152,6 +152,7 @@ footer{
     border-bottom-style: solid;
     background-color: rgba(255, 255, 255, 0);
 }
+
 
 
 
