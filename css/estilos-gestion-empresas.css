@@ -115,3 +115,8 @@ h1{
 #productos{
     margin-bottom: 20px;
 }
+
+tbody {
+	width: 50%;
+	height: 300px;
+}

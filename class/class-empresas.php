@@ -16,7 +16,7 @@ class Empresas{
     ){
         $this->nombreEmpresa=$nombreEmpresa;
         $this->tiempo=$tiempo;
-        $this->direc$direccion=$direccion;
+        $this->direccion=$direccion;
         $this->numeroTelefono=$numeroTelefono;
         $this->correoElectronico=$correoElectronico;
     }
@@ -120,6 +120,64 @@ class Empresas{
 
         return $this;
     }
+
+
+    public function guardarEmpresas(){
+        $contenidoArchivo= file_get_contents("../data/empresas.json");
+        $empresas = json_decode($contenidoArchivo, true);
+        $empresas[]=array(
+            "nombreEmpresa"=>$this->nombreEmpresa,
+            "tiempo"=>$this->tiempo,
+            "direccion"=>$this->direccion,
+            "numeroTelefono"=>$this->numeroTelefono,
+            "correoElectronico"=>$this->correoElectronico,
+            
+        );
+
+        $archivo = fopen("../data/empresas.json", "w"); //w para sustituir el contenido
+        fwrite($archivo, json_encode($empresas));
+}
+    public static function obtenerEmpresas(){
+        $contenidoArchivo = file_get_contents("../data/empresas.json");
+        echo $contenidoArchivo;
+}
+
+public static function obtenerEmpresa($indice){
+    $contenidoArchivo =  file_get_contents("../data/empresas.json");
+    $empresas= json_decode($contenidoArchivo,true);
+    echo json_encode($empresas[$indice]);
+}   
+
+public static function eliminarEmpresas($indice){
+    $contenidoArchivo =  file_get_contents("../data/empresas.json");
+    $empresas= json_decode($contenidoArchivo,true);
+    array_splice($empresas,$indice,1);
+    $archivo= fopen("../data/empresas.json","w");
+    fwrite($archivo,json_encode($empresas));
+    fclose($archivo);
+
+}
+
+public function actualizarEmpresa($indice){
+
+    $contenidoArchivo =  file_get_contents("../data/empresas.json");
+    $empresas= json_decode($contenidoArchivo,true);
+    $empresa = array (
+        'nombreEmpresa'=>$this->nombreEmpresa,
+            'tiempo'=>$this->tiempo,
+            'direccion'=>$this->direccion,
+            'numeroTelefono'=>$this->numeroTelefono,
+            'correoElectronico'=>$this->correoElectronico,
+    );
+
+    $empresas[$indice] = $empresa;
+        $archivo= fopen("../data/empresas.json","w");
+       fwrite($archivo,json_encode($empresas));
+       fclose($archivo);
+}
+
+
+
 }
 
 ?>
