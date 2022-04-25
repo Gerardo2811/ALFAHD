@@ -177,7 +177,7 @@ public static function eliminarMotorista($indice){
     $motoristas= json_decode($contenidoArchivo,true);
     array_splice($motoristas,$indice,1);
     $archivo= fopen("../data/motoristas.json","w");
-    fwrite($archivo,json_encode($motorista));
+    fwrite($archivo,json_encode($motoristas));
     fclose($archivo);
 
 }

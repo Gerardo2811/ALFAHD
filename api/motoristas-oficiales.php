@@ -10,13 +10,13 @@
             echo json_encode($resultado);
         break;
         
-        // case 'GET':
-        //     if(isset($_GET['id'])){
-        //         Motoristas::obteneMotoristaOficial($_GET['id']);
-        //     }else{
-        //         Motoristas::obtenerMotoristasOficiales();
-        //     }
-        //  break;
+         case 'GET':
+            if(isset($_GET['id'])){
+                Motoristas::obteneMotoristaOficial($_GET['id']);
+            }else{
+                 Motoristas::obtenerMotoristasOficiales();
+            }
+         break;
         case 'PUT':
            //...
         break;
