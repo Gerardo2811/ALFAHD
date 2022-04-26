@@ -113,3 +113,23 @@ function guardar(){
         document.getElementById('email_GF').value=null,
         document.getElementById('password_GF').value=null
 }
+
+function login(){
+
+    usuario ={
+        email:document.getElementById('email_GF').value,
+        password:document.getElementById('password_GF').value,
+    };
+    axios({
+        method:"'POST'",
+        url:'../ALFHAD/api/usuariosGF.php',
+        responseType:'json',
+        data: usuario
+        }) .then(res=>{
+            console.log(res.data);
+            this.usuario=res.data;
+        }) .catch(error=>{
+            console.error(error);
+        });
+   
+}

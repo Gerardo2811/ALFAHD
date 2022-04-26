@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION["token"]))
+    header("Location: 401.html ");
+
+
+if(!isset($COOKIE["token"]))
+    header("Location: 401.html ");
+
+
+if($_SESSION["token"] != $COOKIE["token"] )
+    header("Location: 401.html ");
+
+?>
 <div class="col rounded-3" id="ventanas-solicitudes">
                            
                             

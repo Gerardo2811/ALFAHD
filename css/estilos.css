@@ -161,3 +161,11 @@ width: 500px;
     color: #fff !important;
     border-color: #F9F8B1 !important;
 }
+
+#loginForm{
+    margin: 0px auto 50px;
+    padding:10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
