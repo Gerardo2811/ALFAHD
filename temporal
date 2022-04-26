@@ -47,3 +47,65 @@
   <div class="col-6">
 
   </div>
+
+
+  ----------------------------------------
+  
+  <div class="col-4" id="categorias">
+    <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Restaurantes de pollo
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Restaurantes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Pollolandia.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">combo #1</h5>
+                <p class="card-text">550 L</p>
+                <input type="text" placeholder="Cantidad"> 
+                <a href="#" class="btn btn-secondary">Pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <tr>
+    <th scope="row">1</th>
+    <td><img id="pequeño" src="img/HamburguesaMilanesa.png" alt=""></td>
+    <td>Combo #1</td>
+    <td>75.00</td>
+    <td>1</td>
+    <td>75.00</td>
+    <td><i class="fa-solid fa-delete-left"></i></td>
+  </tr>
+  <th scope="row">1</th>
+    <td><img id="pequeño" src="img/HamburguesaMilanesa.png" alt=""></td>
+    <td>Combo #1</td>
+    <td>75.00</td>
+    <td>1</td>
+    <td>75.00</td>
+    <td><i class="fa-solid fa-delete-left"></i></td>
+  </tr>
+  <th scope="row">1</th>
+  <td><img id="pequeño" src="img/HamburguesaMilanesa.png" alt=""></td>
+  <td>Combo #1</td>
+  <td>75.00</td>
+  <td>1</td>
+  <td>75.00</td>
+  <td><i class="fa-solid fa-delete-left"></i></td>

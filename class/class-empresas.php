@@ -5,13 +5,20 @@ class Empresas{
     private $direccion;
     private $numeroTelefono;
     private $correoElectronico;
+    private $productos;
+    private $idEmpresa;
+    private $imagen;
+
 
     public function __construct(
         $nombreEmpresa,
         $tiempo,
         $direccion,
         $numeroTelefono,
-        $correoElectronico
+        $correoElectronico,
+        $productos,
+        $idEmpresa,
+        $imagen
 
     ){
         $this->nombreEmpresa=$nombreEmpresa;
@@ -19,6 +26,9 @@ class Empresas{
         $this->direccion=$direccion;
         $this->numeroTelefono=$numeroTelefono;
         $this->correoElectronico=$correoElectronico;
+        $this->productos=$productos;
+        $this->idEmpresa=$idEmpresa;
+        $this->imagen=$imagen;
     }
 
     /**
@@ -178,6 +188,66 @@ public function actualizarEmpresa($indice){
 
 
 
+
+    /**
+     * Get the value of productos
+     */ 
+    public function getProductos()
+    {
+        return $this->productos;
+    }
+
+    /**
+     * Set the value of productos
+     *
+     * @return  self
+     */ 
+    public function setProductos($productos)
+    {
+        $this->productos = $productos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idEmpresa
+     */ 
+    public function getIdEmpresa()
+    {
+        return $this->idEmpresa;
+    }
+
+    /**
+     * Set the value of idEmpresa
+     *
+     * @return  self
+     */ 
+    public function setIdEmpresa($idEmpresa)
+    {
+        $this->idEmpresa = $idEmpresa;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of imagen
+     */ 
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    /**
+     * Set the value of imagen
+     *
+     * @return  self
+     */ 
+    public function setImagen($imagen)
+    {
+        $this->imagen = $imagen;
+
+        return $this;
+    }
 }
 
 ?>
