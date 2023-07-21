@@ -1,0 +1,30 @@
+[
+    {
+        "nombreProducto": "Producto Farmancia 1",
+        "idProducto": 1,
+        "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        "precio": 999949.99,
+        "cantidad":5
+    },
+    {
+        "nombreProducto": "Producto Farmancia 1",
+        "idProducto": 1,
+        "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        "precio": 999949.99,
+        "cantidad":5
+    },
+    {
+        "nombreProducto": "Producto Farmancia 1",
+        "idProducto": 1,
+        "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        "precio": 999949.99,
+        "cantidad":5
+    },
+    {
+        "nombreProducto": "Producto Farmancia 1",
+        "idProducto": 1,
+        "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        "precio": 999949.99,
+        "cantidad":5
+    }
+]

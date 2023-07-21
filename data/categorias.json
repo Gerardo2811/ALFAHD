@@ -1,0 +1,42 @@
+[
+  {
+    "nombreCategoria": "Farmacias",
+    "idCategoria": 1,
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#9CD0FA",
+    "icono": "fas fa-briefcase-medical",
+    "empresas": [1, 2, 3]
+  },
+  {
+    "nombreCategoria": "Restaurantes",
+    "idCategoria": 2,
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#FFA8AA",
+    "icono": "fas fa-bus-alt",
+    "empresas": [4, 5, 6]
+  },
+  {
+    "nombreCategoria": "Salud",
+    "idCategoria": 3,
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#D3B7F3",
+    "icono": "fas fa-bug",
+    "empresas": [7, 8, 9]
+  },
+  {
+    "nombreCategoria": "Caf\u00e9",
+    "idCategoria": 4,
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#0AD1AE",
+    "icono": "fas fa-box-open",
+    "empresas": [10, 11, 12]
+  },
+  {
+    "nombreCategoria": "Bebidas",
+    "idCategoria": 5,
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#F4845E",
+    "icono": "fas fa-cannabis",
+    "empresas": [13, 14, 15]
+  }
+]

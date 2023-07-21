@@ -1,0 +1,127 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION["token"]))
+    header("Location: 401.html ");
+
+
+if(!isset($COOKIE["token"]))
+    header("Location: 401.html ");
+
+
+if($_SESSION["token"] != $COOKIE["token"] )
+    header("Location: 401.html ");
+
+?>
+<div class="col rounded-3" id="ventanas-solicitudes">
+                           
+                            
+    <a href="#" class="motoristas list-group-item list-group-item-action" id="solicitud-uno">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Juan perez</h5>
+            <small>Hace 3 dias</small>
+    </div>
+    <p class="mb-1">98278912</p>
+    <p class="mb-1">Francisco morazan</p>
+    <small>12/12/12</small>
+</a>
+<a href="#" class="list-group-item list-group-item-action" id="solicitud-dos">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Gustavo Lopez</h5>
+      <small>Hace 2 dias</small>
+    </div>
+    <p class="mb-1">Comprometido</p>
+    <p class="mb-1">10 anos de experiencia</p>
+    <small>Solidario</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" id="solicitud-uno">
+      <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Josue Lopez</h5>
+      <small>Hace 6 dias</small>
+    </div>
+    <p class="mb-1">Casado</p>
+    <p class="mb-1">1 anos de experiencia</p>
+    <small>Honesto</small>
+</a>
+</div>
+
+<div class="col rounded-3" id="ventanas-solicitudes">
+    <a href="#" class="list-group-item list-group-item-action " id="solicitud-uno">
+        <button id="btn-verde" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modificar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" id="solicitud-dos">
+        <button id="btn-verde" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modificar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" id="solicitud-uno">
+        <button id="btn-verde" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modificar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </a>
+  </div>
+  <div class="col-6">
+
+  </div>
+
+
+  ----------------------------------------
+  
+  <div class="col-4" id="categorias">
+    <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Restaurantes de pollo
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Restaurantes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Pollolandia.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">combo #1</h5>
+                <p class="card-text">550 L</p>
+                <input type="text" placeholder="Cantidad"> 
+                <a href="#" class="btn btn-secondary">Pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <tr>
+    <th scope="row">1</th>
+    <td><img id="pequeño" src="img/HamburguesaMilanesa.png" alt=""></td>
+    <td>Combo #1</td>
+    <td>75.00</td>
+    <td>1</td>
+    <td>75.00</td>
+    <td><i class="fa-solid fa-delete-left"></i></td>
+  </tr>
+  <th scope="row">1</th>
+    <td><img id="pequeño" src="img/HamburguesaMilanesa.png" alt=""></td>
+    <td>Combo #1</td>
+    <td>75.00</td>
+    <td>1</td>
+    <td>75.00</td>
+    <td><i class="fa-solid fa-delete-left"></i></td>
+  </tr>
+  <th scope="row">1</th>
+  <td><img id="pequeño" src="img/HamburguesaMilanesa.png" alt=""></td>
+  <td>Combo #1</td>
+  <td>75.00</td>
+  <td>1</td>
+  <td>75.00</td>
+  <td><i class="fa-solid fa-delete-left"></i></td>
